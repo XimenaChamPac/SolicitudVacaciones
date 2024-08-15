@@ -12,14 +12,14 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_DQ-byFnJEe-1_OYlI7ccFg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_DQ-byVnJEe-1_OYlI7ccFg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_DQ-bylnJEe-1_OYlI7ccFg" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_68OWUFnTEe-1_OYlI7ccFg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_68OWUVnTEe-1_OYlI7ccFg" name="solicitud" content="solicitud" type="TYPE_VARIABLE" returnType="com.company.model.SolicitudVacaciones">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_68OWUlnTEe-1_OYlI7ccFg" name="solicitud" dataType="_DQ-cNlnJEe-1_OYlI7ccFg" className="com.company.model.SolicitudVacaciones"/>
+          <operations xmi:type="expression:Operation" xmi:id="_480Gsln8Ee-1_OYlI7ccFg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_480Gs1n8Ee-1_OYlI7ccFg" name="solicitud" content="solicitud" type="TYPE_VARIABLE" returnType="com.company.model.SolicitudVacaciones">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_480GtFn8Ee-1_OYlI7ccFg" name="solicitud" dataType="_DQ-cNlnJEe-1_OYlI7ccFg" className="com.company.model.SolicitudVacaciones"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_68OWU1nTEe-1_OYlI7ccFg" name="solicitudInput.estaAprobado" content="solicitudInput?.estaAprobado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_68OWVFnTEe-1_OYlI7ccFg" name="solicitudInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_480GtVn8Ee-1_OYlI7ccFg" name="solicitudInput.estaAprobado" content="solicitudInput?.estaAprobado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_480Gtln8Ee-1_OYlI7ccFg" name="solicitudInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_68OWVVnTEe-1_OYlI7ccFg" type="JAVA_METHOD" expression="setEstaAprobado">
+            <operator xmi:type="expression:Operator" xmi:id="_480Gt1n8Ee-1_OYlI7ccFg" type="JAVA_METHOD" expression="setEstaAprobado">
               <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
@@ -35,8 +35,8 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_LVrKoFnMEe-1_OYlI7ccFg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_DQ-b1FnJEe-1_OYlI7ccFg">
-            <inputs xmi:type="process:ContractInput" xmi:id="_68L6EFnTEe-1_OYlI7ccFg" name="solicitudInput" type="COMPLEX" dataReference="solicitud" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_68L6EVnTEe-1_OYlI7ccFg" name="estaAprobado" type="BOOLEAN" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_480GsFn8Ee-1_OYlI7ccFg" name="solicitudInput" type="COMPLEX" dataReference="solicitud" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_480GsVn8Ee-1_OYlI7ccFg" name="estaAprobado" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_DQ-b1VnJEe-1_OYlI7ccFg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
